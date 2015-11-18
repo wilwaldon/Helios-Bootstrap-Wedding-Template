@@ -1,0 +1,341 @@
+/*
+ * Theme name:  COSMOS
+ * Author: William Waldon
+ * URL: http://wilwaldon.com
+ * Version: 1.0
+ */
+
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+body{
+  padding-top:52px;
+  background:#f5f5f5;
+  color: #374650;
+  font-size:16px;
+  font-family: "Lato", sans-serif;
+}
+
+/* Links */
+a {
+  color: #6598b8;
+  word-wrap: break-word;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+  color:rgba(101, 152, 184, 0.7);
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight:100;
+}
+
+/*Buttons*/
+
+.btn{
+  padding: 14px 27px;
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 2px;
+  border:none;
+  text-align: center;
+  cursor: pointer;
+  background: #3FB284;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition-property: color, background-color;
+  -webkit-transition-duration: .1s;
+  -webkit-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -moz-transition-property: color, background-color;
+  -moz-transition-duration: .1s;
+  -moz-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -ms-transition-property: color, background-color;
+  -ms-transition-duration: .1s;
+  -ms-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -o-transition-property: color, background-color;
+  -o-transition-duration: .1s;
+  -o-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  transition-property: color, background-color;
+  transition-duration: .1s;
+  transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.btn:hover{
+  background: #3FB284;
+  color:#fff;
+  opacity: 0.7;
+}
+
+.btn.dark{
+  background:#222;
+  color:#fff;
+}
+
+.btn.dark:hover{
+  background:#444;
+}
+
+.btn.aqua{
+  background-color: #4194A7;
+  color: #fff;
+}
+
+.btn.outline{
+  color:#3FB284;
+  border:1px solid #3FB284;
+  background: transparent;
+}
+
+.btn.outline:hover{
+  background:#3FB284;
+  opacity: .8;
+  color:#fff;
+}
+/*button loading animation*/
+.spinner {
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+
+  -webkit-transition: opacity 0.25s, width 0.25s;
+  -moz-transition: opacity 0.25s, width 0.25s;
+  -o-transition: opacity 0.25s, width 0.25s;
+  transition: opacity 0.25s, width 0.25s;
+}
+
+.has-spinner.active {
+  cursor:not-allowed;
+}
+
+.has-spinner.active .spinner {
+  opacity: 1;
+  width: auto; /* This doesn't work, just fix for unkown width elements */
+}
+
+.has-spinner.btn-mini.active .spinner {
+    width: 10px;
+}
+
+.has-spinner.btn-small.active .spinner {
+    width: 13px;
+}
+
+.has-spinner.btn.active .spinner {
+    width: 16px;
+}
+
+.has-spinner.btn-large.active .spinner {
+    width: 19px;
+}
+
+/*section*/
+
+section,
+.section{
+  padding-top:70px;
+  padding-bottom:70px;
+}
+
+section.alt,
+.section.alt{
+  background: #E6EDF2;
+}
+
+/*forms*/
+
+.form-control{
+  box-shadow: none;
+  border-color: #E0E0E0;
+}
+
+/*Default Forms*/
+textarea,
+textarea.form-control,
+input[type="text"],
+input[type="textarea"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  padding:16px 4px;
+  margin-top:20px;
+  box-shadow:none;
+  border-radius: 0;
+  border:0px;
+  border-bottom:2px solid #eee;
+  outline: 0;
+}
+
+/*forms active*/
+textarea.form-control:focus,
+textarea.form-control:active,
+textarea:focus,
+textarea:active,
+input[type="text"]:focus,
+input[type="text"]:active,
+input[type="password"]:focus,
+input[type="password"]:active,
+input[type="datetime"]:focus,
+input[type="datetime"]:active,
+input[type="datetime-local"]:focus,
+input[type="datetime-local"]:active,
+input[type="date"]:focus,
+input[type="date"]:active,
+input[type="month"]:focus,
+input[type="month"]:active,
+input[type="time"]:focus,
+input[type="time"]:active,
+input[type="week"]:focus,
+input[type="week"]:active,
+input[type="number"]:focus,
+input[type="number"]:active,
+input[type="email"]:focus,
+input[type="email"]:active,
+input[type="url"]:focus,
+input[type="url"]:active,
+input[type="search"]:focus,
+input[type="search"]:active,
+input[type="tel"]:focus,
+input[type="tel"]:active,
+input[type="color"]:focus,
+input[type="color"]:active,
+.uneditable-input:focus,
+.uneditable-input:active {
+  border:0;
+  box-shadow:none;
+  border-bottom:2px solid #3FB284;
+  outline: 0;
+}
+
+/*navbar*/
+.navbar{
+  background: #fffffe;
+  border-bottom:2px solid #fff;
+  text-transform: uppercase;
+  margin-bottom:0;
+}
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand{
+  color: #3FB284;
+}
+.navbar a{
+  color: #3FB284;
+}
+
+.navbar a:hover{
+  opacity: 0.8;
+  background:transparent;
+  background-color:transparent;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover{
+  background:transparent;
+  background-color:transparent;
+}
+
+.navbar-toggle .icon-bar{
+  background:#333;
+}
+
+/*section*/
+
+section{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+/*header*/
+
+.header{
+  background:#eee;
+}
+
+/*hero*/
+
+#hero {
+  padding-top: 210px;
+  padding-bottom: 210px;
+  text-align: center;
+  color: #fff;
+  background: #3f77a4; /* Old browsers */
+  background: -moz-linear-gradient(left top 315deg, #0E153B, #F9E2EA);
+  background: -webkit-gradient(linear, left top, right bottom, from(#0E153B), to(#F9E2EA));
+  background: url(../img/hero.jpg) no-repeat center center;
+  background-size: cover;
+  text-align:center;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#hero h1{
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-shadow: 1px 1px #777;
+}
+
+#hero h2{
+  color: #3FB284;
+  font-size:24px;
+  font-weight:100;
+}
+
+#hero .btn{
+  margin-top:20px;
+}
+
+/*rsvp*/
+
+.rsvp{
+  padding:20px;
+  background:#fff;
+  border:1px solid #eee;
+  border-radius: 2px;
+}
+
+/*travel*/
+#map{
+  padding-top:20px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 600px;
+}
