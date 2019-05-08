@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{
 
 .btn{
   padding: 14px 27px;
-  color: #fff;
+  color: #fff!important;
   white-space: nowrap;
   border-radius: 2px;
   border:none;
@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{
   cursor: pointer;
   background: #3FB284;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -80,74 +80,14 @@ h1,h2,h3,h4,h5,h6,.navbar-brand{
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  outline: none;
 }
 
 .btn:hover{
   background: #3FB284;
   color:#fff;
   opacity: 0.7;
-}
-
-.btn.dark{
-  background:#222;
-  color:#fff;
-}
-
-.btn.dark:hover{
-  background:#444;
-}
-
-.btn.aqua{
-  background-color: #4194A7;
-  color: #fff;
-}
-
-.btn.outline{
-  color:#3FB284;
-  border:1px solid #3FB284;
-  background: transparent;
-}
-
-.btn.outline:hover{
-  background:#3FB284;
-  opacity: .8;
-  color:#fff;
-}
-/*button loading animation*/
-.spinner {
-  display: inline-block;
-  opacity: 0;
-  width: 0;
-
-  -webkit-transition: opacity 0.25s, width 0.25s;
-  -moz-transition: opacity 0.25s, width 0.25s;
-  -o-transition: opacity 0.25s, width 0.25s;
-  transition: opacity 0.25s, width 0.25s;
-}
-
-.has-spinner.active {
-  cursor:not-allowed;
-}
-
-.has-spinner.active .spinner {
-  opacity: 1;
-  width: auto; /* This doesn't work, just fix for unkown width elements */
-}
-
-.has-spinner.btn-mini.active .spinner {
-    width: 10px;
-}
-
-.has-spinner.btn-small.active .spinner {
-    width: 13px;
-}
-
-.has-spinner.btn.active .spinner {
-    width: 16px;
-}
-
-.has-spinner.btn-large.active .spinner {
-    width: 19px;
+  outline: none;
 }
 
 /*section*/
@@ -284,6 +224,7 @@ section{
 
 .cols img{
   border-radius: 3px;
+  margin-bottom: 20px;
 }
 
 /*header*/
@@ -299,7 +240,7 @@ section{
   padding-bottom: 210px;
   text-align: center;
   color: #fff;
-  background: #3f77a4; /* Old browsers */
+  background: #0E153B; /* Old browsers */
   background: -moz-linear-gradient(left top 315deg, #0E153B, #F9E2EA);
   background: -webkit-gradient(linear, left top, right bottom, from(#0E153B), to(#F9E2EA));
   background: url(../img/hero.jpg) no-repeat center center;
@@ -311,19 +252,27 @@ section{
 
 #hero h1{
   font-size: 80px;
+  color: #000;
   text-transform: uppercase;
   font-weight: 100;
-  text-shadow: 1px 1px #777;
 }
 
 #hero h2{
-  color: #3FB284;
+  color: #000;
   font-size:24px;
   font-weight:100;
 }
 
 #hero .btn{
+  width: 220px;
+  background: #fff;
+  color: #3FB284!important;
+  border-radius: 50px;
   margin-top:20px;
+}
+
+#hero .btn:hover{
+  opacity: 0.5;
 }
 
 /*rsvp*/
